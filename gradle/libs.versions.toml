@@ -7,7 +7,7 @@ jqwik = "1.9.2"
 lettuce = "6.5.1.RELEASE"
 testcontainers = "1.21.3"
 spring-boot = "3.4.1"
-spring-framework = "6.2.1"
+spring-framework = "7.0.8"
 jakarta-servlet = "6.1.0"
 
 [libraries]

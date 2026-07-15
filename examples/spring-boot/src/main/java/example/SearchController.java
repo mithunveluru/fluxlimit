@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Try it: {@code curl -i 'localhost:8080/api/search?user=alice'} — the sixth call within ten
- * seconds returns 429 with Retry-After.
+ * Try it: {@code curl -i 'localhost:8080/api/search?user=alice'} — the sixth call in quick
+ * succession returns 429 with Retry-After.
  */
 @RestController
 public class SearchController {

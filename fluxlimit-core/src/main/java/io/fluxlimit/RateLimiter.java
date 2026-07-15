@@ -89,8 +89,9 @@ public interface RateLimiter extends AutoCloseable {
     }
 
     /**
-     * Publishes {@code fluxlimit.requests} and {@code fluxlimit.store.failures} meters to this
-     * registry. Micrometer is an optional dependency — only needed when this method is used.
+     * Publishes {@code fluxlimit.requests}, {@code fluxlimit.store.failures}, and {@code
+     * fluxlimit.store.latency} meters to this registry. Micrometer is an optional dependency — only
+     * needed when this method is used.
      */
     public Builder meterRegistry(MeterRegistry meterRegistry) {
       this.meterRegistry = Objects.requireNonNull(meterRegistry, "meterRegistry");

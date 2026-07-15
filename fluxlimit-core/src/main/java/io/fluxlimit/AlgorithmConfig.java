@@ -37,12 +37,6 @@ public sealed interface AlgorithmConfig
           refillPeriod.compareTo(Duration.ofDays(365)) <= 0,
           "refillPeriod must be at most 365 days");
     }
-
-    private static void require(boolean condition, String message) {
-      if (!condition) {
-        throw new IllegalArgumentException(message);
-      }
-    }
   }
 
   /**
@@ -66,11 +60,11 @@ public sealed interface AlgorithmConfig
       require(window.compareTo(Duration.ofMillis(1)) >= 0, "window must be at least 1 ms");
       require(window.compareTo(Duration.ofDays(365)) <= 0, "window must be at most 365 days");
     }
+  }
 
-    private static void require(boolean condition, String message) {
-      if (!condition) {
-        throw new IllegalArgumentException(message);
-      }
+  private static void require(boolean condition, String message) {
+    if (!condition) {
+      throw new IllegalArgumentException(message);
     }
   }
 }

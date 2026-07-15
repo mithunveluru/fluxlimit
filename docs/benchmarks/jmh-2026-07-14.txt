@@ -1,0 +1,70 @@
+Benchmark                                                        Mode    Cnt         Score          Error   Units
+ComparisonBenchmark.bucket4jContended                           thrpt      5   2380404.110 ±   817066.578   ops/s
+ComparisonBenchmark.bucket4jContended:·gc.alloc.rate            thrpt      5       145.880 ±       47.582  MB/sec
+ComparisonBenchmark.bucket4jContended:·gc.alloc.rate.norm       thrpt      5        64.001 ±        0.001    B/op
+ComparisonBenchmark.bucket4jContended:·gc.count                 thrpt      5        10.000                 counts
+ComparisonBenchmark.bucket4jContended:·gc.time                  thrpt      5       109.000                     ms
+ComparisonBenchmark.bucket4jSingle                              thrpt      5  12786080.177 ± 10276339.429   ops/s
+ComparisonBenchmark.bucket4jSingle:·gc.alloc.rate               thrpt      5       780.069 ±      627.433  MB/sec
+ComparisonBenchmark.bucket4jSingle:·gc.alloc.rate.norm          thrpt      5        64.000 ±        0.001    B/op
+ComparisonBenchmark.bucket4jSingle:·gc.count                    thrpt      5        37.000                 counts
+ComparisonBenchmark.bucket4jSingle:·gc.time                     thrpt      5        73.000                     ms
+ComparisonBenchmark.fluxlimitContended                          thrpt      5   4044839.323 ±  1667875.437   ops/s
+ComparisonBenchmark.fluxlimitContended:·gc.alloc.rate           thrpt      5       738.845 ±      302.146  MB/sec
+ComparisonBenchmark.fluxlimitContended:·gc.alloc.rate.norm      thrpt      5       192.114 ±        0.079    B/op
+ComparisonBenchmark.fluxlimitContended:·gc.count                thrpt      5        29.000                 counts
+ComparisonBenchmark.fluxlimitContended:·gc.time                 thrpt      5        74.000                     ms
+ComparisonBenchmark.fluxlimitSingle                             thrpt      5   4666731.955 ±  2697473.885   ops/s
+ComparisonBenchmark.fluxlimitSingle:·gc.alloc.rate              thrpt      5       854.597 ±      492.493  MB/sec
+ComparisonBenchmark.fluxlimitSingle:·gc.alloc.rate.norm         thrpt      5       192.144 ±        0.142    B/op
+ComparisonBenchmark.fluxlimitSingle:·gc.count                   thrpt      5        39.000                 counts
+ComparisonBenchmark.fluxlimitSingle:·gc.time                    thrpt      5        81.000                     ms
+ComparisonBenchmark.resilience4jContended                       thrpt      5   9651485.730 ±  3442392.822   ops/s
+ComparisonBenchmark.resilience4jContended:·gc.alloc.rate        thrpt      5       370.333 ±      135.765  MB/sec
+ComparisonBenchmark.resilience4jContended:·gc.alloc.rate.norm   thrpt      5        40.337 ±        0.205    B/op
+ComparisonBenchmark.resilience4jContended:·gc.count             thrpt      5        20.000                 counts
+ComparisonBenchmark.resilience4jContended:·gc.time              thrpt      5        48.000                     ms
+ComparisonBenchmark.resilience4jSingle                          thrpt      5  11708089.422 ±  6141059.734   ops/s
+ComparisonBenchmark.resilience4jSingle:·gc.alloc.rate           thrpt      5       446.204 ±      234.564  MB/sec
+ComparisonBenchmark.resilience4jSingle:·gc.alloc.rate.norm      thrpt      5        40.000 ±        0.001    B/op
+ComparisonBenchmark.resilience4jSingle:·gc.count                thrpt      5        20.000                 counts
+ComparisonBenchmark.resilience4jSingle:·gc.time                 thrpt      5        74.000                     ms
+InMemoryBenchmark.contendedOneKey                               thrpt      5   3538145.182 ±  1138409.812   ops/s
+InMemoryBenchmark.contendedOneKey:·gc.alloc.rate                thrpt      5       646.078 ±      204.235  MB/sec
+InMemoryBenchmark.contendedOneKey:·gc.alloc.rate.norm           thrpt      5       192.124 ±        0.058    B/op
+InMemoryBenchmark.contendedOneKey:·gc.count                     thrpt      5        25.000                 counts
+InMemoryBenchmark.contendedOneKey:·gc.time                      thrpt      5        72.000                     ms
+InMemoryBenchmark.singleThread                                  thrpt      5   4850059.438 ±  1914787.551   ops/s
+InMemoryBenchmark.singleThread:·gc.alloc.rate                   thrpt      5       887.991 ±      351.164  MB/sec
+InMemoryBenchmark.singleThread:·gc.alloc.rate.norm              thrpt      5       192.135 ±        0.091    B/op
+InMemoryBenchmark.singleThread:·gc.count                        thrpt      5        33.000                 counts
+InMemoryBenchmark.singleThread:·gc.time                         thrpt      5        75.000                     ms
+InMemoryBenchmark.spreadKeys                                    thrpt      5   3290369.440 ±   650272.604   ops/s
+InMemoryBenchmark.spreadKeys:·gc.alloc.rate                     thrpt      5       594.099 ±      103.074  MB/sec
+InMemoryBenchmark.spreadKeys:·gc.alloc.rate.norm                thrpt      5       192.398 ±        0.288    B/op
+InMemoryBenchmark.spreadKeys:·gc.count                          thrpt      5        12.000                 counts
+InMemoryBenchmark.spreadKeys:·gc.time                           thrpt      5       247.000                     ms
+RedisBenchmark.eightClients                                    sample  33291      2397.052 ±       50.238   us/op
+RedisBenchmark.eightClients:eightClients·p0.00                 sample              232.448                  us/op
+RedisBenchmark.eightClients:eightClients·p0.50                 sample             1820.672                  us/op
+RedisBenchmark.eightClients:eightClients·p0.90                 sample             4620.288                  us/op
+RedisBenchmark.eightClients:eightClients·p0.95                 sample             6283.264                  us/op
+RedisBenchmark.eightClients:eightClients·p0.99                 sample            11567.104                  us/op
+RedisBenchmark.eightClients:eightClients·p0.999                sample            39337.853                  us/op
+RedisBenchmark.eightClients:eightClients·p0.9999               sample            70560.173                  us/op
+RedisBenchmark.eightClients:eightClients·p1.00                 sample            89784.320                  us/op
+RedisBenchmark.eightClients:·gc.alloc.rate                     sample      5         5.069 ±        5.389  MB/sec
+RedisBenchmark.eightClients:·gc.alloc.rate.norm                sample      5      1731.579 ±      666.146    B/op
+RedisBenchmark.eightClients:·gc.count                          sample      5           ≈ 0                 counts
+RedisBenchmark.singleClient                                    sample  29080       342.326 ±       11.140   us/op
+RedisBenchmark.singleClient:singleClient·p0.00                 sample              108.800                  us/op
+RedisBenchmark.singleClient:singleClient·p0.50                 sample              252.160                  us/op
+RedisBenchmark.singleClient:singleClient·p0.90                 sample              513.024                  us/op
+RedisBenchmark.singleClient:singleClient·p0.95                 sample              740.301                  us/op
+RedisBenchmark.singleClient:singleClient·p0.99                 sample             2151.956                  us/op
+RedisBenchmark.singleClient:singleClient·p0.999                sample             4868.268                  us/op
+RedisBenchmark.singleClient:singleClient·p0.9999               sample            20016.906                  us/op
+RedisBenchmark.singleClient:singleClient·p1.00                 sample            62586.880                  us/op
+RedisBenchmark.singleClient:·gc.alloc.rate                     sample      5         4.353 ±        5.768  MB/sec
+RedisBenchmark.singleClient:·gc.alloc.rate.norm                sample      5      1558.910 ±      737.618    B/op
+RedisBenchmark.singleClient:·gc.count                          sample      5           ≈ 0                 counts

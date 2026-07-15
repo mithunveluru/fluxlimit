@@ -1,0 +1,43 @@
+[versions]
+errorprone-core = "2.38.0"
+junit = "5.11.4"
+assertj = "3.26.3"
+micrometer = "1.14.3"
+jqwik = "1.9.2"
+lettuce = "6.5.1.RELEASE"
+testcontainers = "1.21.3"
+spring-boot = "3.4.1"
+spring-framework = "6.2.1"
+jakarta-servlet = "6.1.0"
+
+[libraries]
+spring-boot-autoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure", version.ref = "spring-boot" }
+spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor", version.ref = "spring-boot" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot" }
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot" }
+spring-webmvc = { module = "org.springframework:spring-webmvc", version.ref = "spring-framework" }
+jakarta-servlet-api = { module = "jakarta.servlet:jakarta.servlet-api", version.ref = "jakarta-servlet" }
+lettuce-core = { module = "io.lettuce:lettuce-core", version.ref = "lettuce" }
+testcontainers = { module = "org.testcontainers:testcontainers", version.ref = "testcontainers" }
+testcontainers-junit = { module = "org.testcontainers:junit-jupiter", version.ref = "testcontainers" }
+errorprone-core = { module = "com.google.errorprone:error_prone_core", version.ref = "errorprone-core" }
+micrometer-core = { module = "io.micrometer:micrometer-core", version.ref = "micrometer" }
+jqwik = { module = "net.jqwik:jqwik", version.ref = "jqwik" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version = "1.11.4" }
+assertj-core = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+
+[libraries.bucket4j-core]
+module = "com.bucket4j:bucket4j-core"
+version = "8.10.1"
+
+[libraries.resilience4j-ratelimiter]
+module = "io.github.resilience4j:resilience4j-ratelimiter"
+version = "2.2.0"
+
+[plugins]
+jmh = { id = "me.champeau.jmh", version = "0.7.3" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spotless = { id = "com.diffplug.spotless", version = "7.0.4" }
+errorprone = { id = "net.ltgt.errorprone", version = "4.2.0" }
+maven-publish = { id = "com.vanniktech.maven.publish", version = "0.32.0" }

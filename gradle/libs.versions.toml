@@ -6,7 +6,7 @@ micrometer = "1.14.3"
 jqwik = "1.9.2"
 lettuce = "6.5.1.RELEASE"
 testcontainers = "1.21.3"
-spring-boot = "3.4.1"
+spring-boot = "4.1.0"
 spring-framework = "6.2.1"
 jakarta-servlet = "6.1.0"
 

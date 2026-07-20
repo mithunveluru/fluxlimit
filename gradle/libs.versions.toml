@@ -1,7 +1,7 @@
 [versions]
 errorprone-core = "2.38.0"
 junit = "5.11.4"
-assertj = "3.26.3"
+assertj = "3.27.7"
 micrometer = "1.14.3"
 jqwik = "1.9.2"
 lettuce = "6.5.1.RELEASE"
